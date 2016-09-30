@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/img_item_face"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:contentDescription="@string/description_face"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/txt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/img_item_face"
+            android:text="王京炎"
+            android:textColor="@color/PrimaryColor" />
+
+        <TextView
+            android:id="@+id/txt_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/txt_name"
+            android:background="#4244b1"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:text="V0"
+            android:textColor="#fff"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txt_school"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/txt_name"
+            android:layout_below="@+id/txt_name"
+            android:layout_marginTop="5dp"
+            android:text="烟台第三中学"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txt_school"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/txt_school"
+            android:text="老师"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/txt_time_ago"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt_school"
+            android:layout_marginTop="5dp"
+            android:layout_alignStart="@+id/txt_school"
+            android:text="4小时前"
+            android:textSize="12sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/txt_time_ago"
+            android:layout_marginStart="5dp"
+            android:layout_toEndOf="@+id/txt_time_ago"
+            android:text="来自iPhone 7"
+            android:textSize="12sp" />
+    </RelativeLayout>
+</LinearLayout>
